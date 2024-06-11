@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Đặc biệt quan trọng vì React sử dụng nhiều
+        1. dùng với array
+        2. dùng với object
+     -->
+     <script>
+        let stds = ["minh thu",'lan anh','bích ngọc'];
+        let [std1, std2, std3] = stds;
+        console.log(std1, std2, std3);
+
+        let obj={
+            name: 'hoa',
+            id: 111,
+            address: 'hà nội',
+            age: 20
+        }
+        let {id, age, name} = obj;
+        console.log(name);
+     </script>
+</body>
+</html>

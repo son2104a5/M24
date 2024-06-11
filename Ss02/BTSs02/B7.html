@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hasPrimeNumber(arr) {
+            let count = 0;
+            let prime = 0;
+            let result;
+            arr.some((item)=>{
+                for (let i = 1; i <= item; i++) {
+                    if (item % i === 0) {
+                        console.log(i);
+                        count++;
+                    }
+                }
+                if (count <= 2) {
+                    prime++
+                }
+                count = 0;
+            })
+            if (prime != 0) {
+                console.log(true);
+            } else {
+                console.log(false);
+            }
+        }
+        hasPrimeNumber([4, 6, 8, 9, 10])
+        hasPrimeNumber([4, 6, 8, 9, 11])
+    </script>
+</body>
+</html>

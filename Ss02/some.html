@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // some(): một vài
+        // dùng để duyệt các phần tử trong mảng
+        // kết quả trả về là true nếu ít nhất 1 ptu t/m đk
+        // kết quả trả về là false nếu không có ptu t/m đk
+        let num = [4,5,6,7,8];
+        let result = num.some((item, index, array)=>{
+            // console.log(item, index, array);
+            return item > 6;
+        });
+        console.log(result);
+    </script>
+</body>
+</html>

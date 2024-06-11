@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hasUpperCase(str) {
+            regexp = /^[A-Z]/;
+            let upperCase = str.split("");
+            let result = upperCase.some(item=>{
+                if(regexp.test(item)){
+                    return true;
+                }
+            })
+            console.log(result);
+        }
+        hasUpperCase("Hello"); 
+        hasUpperCase("hello");
+    </script>
+</body>
+</html>

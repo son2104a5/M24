@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            reduce(): thường dùng để thực hiện việc tính toán
+            accumulator: biến tích lũy
+            currentValue: giá trị
+        */
+       let cart=[
+        {
+            product: "ip5",
+            price: 50000,
+            quantity: 5
+        },
+        {
+            product: "ip6",
+            price: 60000,
+            quantity: 6
+        },
+        {
+            product: "ip7",
+            price: 70000,
+            quantity: 7
+        },
+        {
+            product: "ip8",
+            price: 80000,
+            quantity: 8
+        },
+       ]
+       // tính ra giá phải trả trong giỏ hàng
+       let totalPrice=cart.reduce((total,item,arr)=>{
+           return total+item.price*item.quantity
+       },0)
+       console.log(totalPrice)
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let phoneBooks = []
+        function addContact(name, phone, email) {
+            phoneBooks.push({
+                name: name,
+                phone: phone,
+                email: email
+            })
+        }
+        addContact('mai', '074129374', 'mainl@gmail.com')
+        addContact('trung', '074129374', 'trungnl@gmail.com')
+        addContact('khang', '074129374', 'khangnl@gmail.com')
+        function displayContact(arr) {
+            for(let i of arr){
+                console.log(i);
+            }
+        }
+        displayContact(phoneBooks)
+    </script>
+</body>
+</html>

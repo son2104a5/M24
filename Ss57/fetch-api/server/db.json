@@ -1,0 +1,28 @@
+{
+  "product": [
+    {
+      "id": 2,
+      "product_name": "iPhone 11",
+      "image": "https://bizweb.dktcdn.net/thumb/1024x1024/100/310/135/products/iphone11-select-2019-family-jpeg-4f6abb75-8cd2-4803-a7ee-95821f0d5ea8.jpg?v=1631987796097",
+      "price": 60000,
+      "quantity": 100,
+      "create_at": "2024-06-10"
+    },
+    {
+      "id": 4,
+      "product_name": "iPhone 13",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/1/5/15_2_7_2_5.jpg",
+      "price": 80000,
+      "quantity": 100,
+      "create_at": "2024-06-10"
+    },
+    {
+      "id": 5,
+      "product_name": "iPhone 14",
+      "image": "https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-14-pro_2__4.png",
+      "price": 90000,
+      "quantity": 100,
+      "create_at": "2024-06-10"
+    }
+  ]
+}

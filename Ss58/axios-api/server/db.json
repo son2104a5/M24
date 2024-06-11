@@ -1,0 +1,67 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "student_name": "S1",
+      "email": "s1@gmail.com",
+      "address": "HN",
+      "phone": "0123456789",
+      "status": true,
+      "created_at": "2024-06-10"
+    },
+    {
+      "id": 3,
+      "student_name": "S3",
+      "email": "s3@gmail.com",
+      "address": "HN",
+      "phone": "0123456789",
+      "status": true,
+      "created_at": "2024-06-10"
+    },
+    {
+      "id": 4,
+      "student_name": "S4",
+      "email": "s4@gmail.com",
+      "address": "HN",
+      "phone": "0123456789",
+      "status": true,
+      "created_at": "2024-06-10"
+    },
+    {
+      "address": "HN",
+      "student_name": "S9",
+      "email": "s9@gmail.com",
+      "phone": "099854321",
+      "status": false,
+      "create_at": "11/6/1970",
+      "id": 5
+    },
+    {
+      "address": "HN",
+      "id": 6,
+      "student_name": "S6",
+      "email": "s6@gmail.com",
+      "phone": "0987654321",
+      "status": false,
+      "create_at": "10/6/1970"
+    },
+    {
+      "address": "HN",
+      "id": 7,
+      "student_name": "S7",
+      "email": "s7@gmail.com",
+      "phone": "0987754321",
+      "status": false,
+      "create_at": "10/6/1970"
+    },
+    {
+      "address": "HN",
+      "id": 8,
+      "student_name": "S8",
+      "email": "s8@gmail.com",
+      "phone": "098854321",
+      "status": false,
+      "create_at": "10/6/1970"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sortByIndex(ar1,ar2,ar3) {
+            for(let i=0;i<3;i++) {
+                let a = [ar1[i]];
+                let b = [ar2[i]];
+                let c = [ar3[i]];
+                let arr = [...a,...b,...c]
+                console.log(arr);
+            }
+        }
+        sortByIndex([1,2,3],['a','b','c'],[true,false,true])
+    </script>
+</body>
+</html>

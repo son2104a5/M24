@@ -1,0 +1,16 @@
+.nav{
+    display: flex;
+    gap: 40px;
+}
+a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.active:visited {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}

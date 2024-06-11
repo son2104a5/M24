@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumToNewArr(ar1, ar2, ar3) {
+            let newArr = [];
+            let total1 = ar1.reduce((total, item)=>{
+                return total + item;
+            }, 0)
+            newArr.push(total1);
+            let total2 = ar2.reduce((total, item)=>{
+                return total + item;
+            }, 0)
+            newArr.push(total2);
+            let total3 = ar3.reduce((total, item)=>{
+                return total + item;
+            }, 0)
+            newArr.push(total3);
+            console.log(newArr);
+        }
+        sumToNewArr([1,2], [6,7,8], [12,8])
+    </script>
+</body>
+</html>

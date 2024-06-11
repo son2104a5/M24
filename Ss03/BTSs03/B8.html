@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function addToIndex(arr1, arr2, index) {
+            arr1.filter((item, find)=>{
+                if(find===index){
+                    for(let element in arr2){
+                        arr1.splice(arr1.length-2,0,arr2[element]);
+                    }
+                }
+            })
+            console.log(arr1);
+        }
+        addToIndex([1,2,3,7,8], [4,5,6], 3)
+        addToIndex(['a','b','e','P'], ['c','d'], 2)
+    </script>
+</body>
+</html>

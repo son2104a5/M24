@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Async-await: dùng để xử lí các tác vụ bất đồng bộ, sinh ra ở pb ES7
+        Thay vì dùng promise thì dùng async-await giúp việc code gọn gàng hơn, nhanh gọn hơn
+        Khi 1 function có từ khóa async đằng trước thì functo=ion đó sẽ trở thành Promise
+        - async-await có giải quyết đc tất cả những việc của promise không (tức là bỏ hoàn toàn promise dùng async-await)
+        - đối với promise khi bắt lỗi thì dùng .catch
+        - đối với async-await khi bắt lỗi thì dùng try-catch
+
+        - ví dụ có tác vụ 1 thực hiện mất 5s
+        - tác vụ 2 thực hiện mất 5s
+        - nếu chạy 2 tác vụ thì mất 10s
+        - promise.all() khi xử lí 2 tác vụ này chỉ mất 5s
+    -->
+        <script>
+            // async function async(){
+            //     await new Promise((resolve, reject) =>{
+            //         setTimeout(() => {
+            //             console.log(1);
+            //             resolve()
+            //         }, 1000);
+            //     })
+            //     console.log(2);
+            // }
+            // console.log(async());
+            
+            // const promise1 = new Promise((resolve, reject) =>{
+            //     setTimeout(() => {
+            //         console.log('cv1');
+            //         resolve()
+            //     }, 2000);
+            // })
+            // const promise2 = new Promise((resolve, reject) =>{
+            //     setTimeout(() => {
+            //         console.log('cv2');
+            //         resolve()
+            //     }, 4000);
+            // })
+            // const promise3 = new Promise((resolve, reject) =>{
+            //     setTimeout(() => {
+            //         console.log('cv3');
+            //         resolve()
+            //     }, 6000);
+            // })
+            // .then(()=>{
+            //     return promise2
+            // })
+            // .then(()=>{
+            //     return promise3
+            // })
+            // .catch((err)=>console.log(err))
+
+            // function task1(){
+            //     return new Promise((resolve, reject) =>{
+            //         setTimeout(() => {
+            //             resolve([1])
+            //         }, 1000);
+            //     })
+            // }
+            // function task2(){
+            //     return new Promise((resolve, reject) =>{
+            //         setTimeout(() => {
+            //             resolve([3])
+            //         }, 3000);
+            //     })
+            // }
+            // async function result(){
+            //     let result1 = await task1();
+            //     console.log(result1);
+            //     let result2 = await task2();
+            //     console.log([...result1, ...result2]);
+            // }
+            // result()
+
+            // dùng fetch là phương thức dùng để call API dữ liệu
+            async function getData(){
+                await fetch('https://jsonplaceholder.typicode.com/users')
+                .then(user=>user.json())
+                .then(data=>{
+                    console.log(data);
+                })
+                console.log('lấy data đi xử lí');
+            }
+            getData()
+        </script>
+</body>
+</html>

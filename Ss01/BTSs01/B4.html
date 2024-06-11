@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Books = [
+            {
+                id: 1,
+                name: "Doraemon"
+            },
+            {
+                id: 2,
+                name: "Crayon Shin-chan"
+            },
+            {
+                id: 3,
+                name: "Tsubasa"
+            },
+            {
+                id: 4,
+                name: "One Piece"
+            },
+        ]
+        let check = +prompt("nhập id sách");
+        let result = Books.find(function(item){
+            return item.id == check;
+        })
+        if(result){
+            console.log(result);
+        }else{
+            console.log("không tìm thấy");
+        }
+    </script>
+</body>
+</html>

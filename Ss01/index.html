@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Các hàm nâng cao trong js
+    1. forEach()
+    2. map()
+    3. filter()
+    4. find()
+    5. findIndex()
+    // Sự khác nhau giữa arrow function và function thường là ntn?
+    ==> Ngoài cú pháp ngắn gọn ra thì còn cái gì nx k
+    1. đối với arrow function thì phải gọi sau khi khai báo
+    2. cú pháp ngắn gọn hơn function bth
+    3. không dùng được arguments(lấy hết các đối số truyền vào)
+    4. không thể dùng làm hàm tạo constructor
+    5. binding(ràng buộc) this
+     ===> Đối với function bth khi đtg gọi phương thức là this đại diện cho đtg đó
+     ===> Đối với arrow function thì this đại diện cho đtg window
+    -->
+    <script>
+        // function bình thg, declaration
+        // function sum(a, b) {
+        //     console.log("hehehe", arguments);
+        // }
+        // console.log(sum(1, 5, 3, 6, 7));
+
+        // const sum2 = (a, b)=>{
+        //     console.log(("123456"), arguments);
+        // }
+        // console.log(sum(2,3,4,5,6));
+        // ----------------------------------------------- //
+        // function Student(name, age) {
+        //     this.name = name;
+        //     this.age = age;
+        // }
+        // let student1 = new Student("Hoa", 20);
+        // let student2 = new Student("Hồng", 22);
+        // console.log(student1, student2);
+
+        // const Student = (name, age) => {
+        //     this.name = name;
+        //     this.age = age;
+        // }
+        // let student1 = new Student("Hoa", 20);
+        // console.log(student1);
+        //-----------------------------------------------//
+        // let obj ={
+        //     name: "Hoa",
+        //     address: "Hà nội",
+        //     getAddress: ()=>{
+        //         console.log(this.address);
+        //     }
+        // }
+        // console.log(obj.getAddress());
+    </script>
+</body>
+</html>

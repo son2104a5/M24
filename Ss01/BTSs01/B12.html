@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table{
+        border: 1px solid black;
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <select id="choose">
+        <option value="0">Tuổi</option>
+        <option value="1">Phòng ban</option>
+    </select>
+    <table id="table">
+
+    </table>
+    <script>
+        let employee = [
+            { id: 1, name: 'Alice', age:25, department: 'HR' }, 
+            { id: 2, name: 'Bob', age: 30, department: 'IT' }, 
+            { id: 3, name: 'Charlie', age: 25, department: 'Marketing' }, 
+            { id: 4, name: 'David', age: 35, department: 'IT' }, 
+            { id: 5, name: 'Eve', age: 30, department: 'HR' }
+        ]
+
+        let table = document.getElementById('table');
+
+        let choose = document.getElementById('choose');
+        choose.addEventListener('change', function(){
+            if(choose.value == 0){
+                employee.sort((a,b) =>a.age-b.age);
+                let arr = []
+                let check = 0;
+                employee.forEach(item=>{
+                    if(item.age != check){
+                        check = item.age;
+                        arr.push(item.age)
+                    }
+                })
+            }
+            if(choose.value == 1){
+                employee.sort((a,b) =>{
+                    if(a.department.charAt(0) < b.department.charAt(0)){
+                        return a.department - b.department
+                    }
+                });
+                console.log(employee);
+                let arr = []
+                let check = "";
+                employee.forEach(item=>{
+                    if(item.department.charAt(0) != check){
+                        check = item.department.charAt(0);
+                        console.log(item.department.charAt(0));
+                        arr.push(item.department)
+                    }
+                })
+                console.log(arr);
+            }
+        })
+    </script>
+</body>
+</html>

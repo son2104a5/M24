@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let carts=[
+            {
+                id: Math.floor(Math.random() * 100000000),
+                name: 'a',
+                price: Math.floor(Math.random() * 1000000000),
+                quantity: Math.floor(Math.random() * 15),
+            },
+            {
+                id: Math.floor(Math.random() * 100000000),
+                name: 'b',
+                price: Math.floor(Math.random() * 1000000000),
+                quantity: Math.floor(Math.random() * 15),
+            },
+            {
+                id: Math.floor(Math.random() * 100000000),
+                name: 'c',
+                price: Math.floor(Math.random() * 1000000000),
+                quantity: Math.floor(Math.random() * 15),
+            },
+            {
+                id: Math.floor(Math.random() * 100000000),
+                name: 'd',
+                price: Math.floor(Math.random() * 1000000000),
+                quantity: Math.floor(Math.random() * 15),
+            },
+        ]
+        function changeQuantity(id, n, cart){
+            cart.forEach((item)=>{
+                if(item.id === id){
+                    item.quantity = n;
+                }
+            })
+            console.log(cart);
+        }
+        changeQuantity(carts[0].id, 20, carts);
+        function deleteCart(id, cart) {
+            cart.forEach((item, index) => {
+                if(item.id === id) {
+                    cart.splice(index, 1);
+                }
+            })
+            console.log(cart);
+        }
+        deleteCart(carts[0].id, carts);
+        function totalCart(cart) {
+            let total = cart.reduce((sum, item) => {
+                return sum + item.price * item.quantity;
+            }, 0)
+            console.log(total);
+        }
+        totalCart(carts);
+    </script>
+</body>
+</html>

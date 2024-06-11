@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Tìm kiếm vị trí phần tử thoả mãn
+        - Nếu có trả về vị trí
+        - Không có trả về -1
+     -->
+    <script>
+        let users=[
+            {
+                id:1,
+                name:'dũng'
+            },
+            {
+                id:2,
+                name:'hoàng'
+            },
+            {
+                id:3,
+                name:'mai'
+            },
+        ]
+        // tìm kiếm trong mảng users có chứa phần tử có id=6 hay không?
+        let result=users.findIndex(item=>item.id==6)
+        console.log(result)
+    </script>
+</body>
+</html>

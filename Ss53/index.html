@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        ĐỒNG BỘ VÀ BẤT ĐỒNG BỘ
+          Đồng bộ: Synchronous
+          Bất đồng bộ: Asynchronous
+        - JS là 1 ngôn ngữ đơn luồng, tức là 1 chạy một luồng duy nhất
+        - Luồng code chạy: chạy từ trái qua phải ==> từ trên xuống dưới
+
+        - Khi đa luồng cái luồng nó sẽ chia sẻ tài nguyên lẫn nhau, ảnh hưởng đến logic code lẫn nhau cho nên tư duy ban đầu
+        của js là đơn luồng (single-thread)
+        - Khi gặp các tác vụ cần thời gian xử lí (chọc vào database, gửi request lên server, đọc files, ghi files,..) thì js sẽ
+        không đợi các tác vụ này xử lí xong rồi mới đến các tác vụ khác.
+        - 3 cách để giải quyết tác vụ bất đồng bộ:
+          + callback: là hàm được truyền vào làm đối số của hàm khác
+          + promise - ES6(2015)
+          + asyn-await
+     -->
+     <script>
+        // Callback
+        function xinSdt(){
+            console.log('A gọi cho B xin số C');
+            console.log('B bảo đợi để tìm số');
+            setTimeout(()=>{
+                sdt = 1234567;
+                callback(sdt)
+            }, 3000)
+        }
+        xinSdt(callback)
+        // dùng callback để giải quyết vấn để
+        // tạo hàm khi có số mới gọi
+        function callback(sdt){
+            console.log(`A gọi cho C theo số ${sdt}`);
+        }
+        // hàm find, findIndex, filter nhận về tham số callback
+
+        // hàm map
+        const arr = [1, 2, 3, 4, 5]
+        // const newArr = arr.map((item, index) => {
+        //     return item * 2
+        // })
+        // console.log(newArr);
+
+        // tạo 1 hàm như hàm map
+        function customMap(ar, callback){
+            let resulArr = []
+            for (const value of arr){
+                resulArr.push(callback(value))
+            }
+            return resulArr
+        }
+        console.log("Giá trị của mảng mới sau khi dùng custom map", customMap(arr, (item)=>item*2));
+
+        setTimeout(()=>{
+            console.log(333);
+            setTimeout(()=>{
+                console.log(444);
+                setTimeout(()=>{
+                    console.log(555);
+                }, 1000)
+            }, 1000)
+        }, 1000)
+     </script>
+</body>
+</html>

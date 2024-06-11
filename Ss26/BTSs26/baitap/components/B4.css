@@ -1,0 +1,19 @@
+.all{
+    display: flex;
+    gap: 50px
+}
+.box1{
+    background-color: red;
+    color: white;
+    padding: 30px;
+}
+.box2{
+    background-color: blue;
+    color: white;
+    padding: 30px;
+}
+.box3 {
+    padding: 30px;
+    background-color: green;
+    color: white;
+}

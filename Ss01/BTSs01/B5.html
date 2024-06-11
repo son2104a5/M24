@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users = [
+            {
+                userName: "kkkkkkkkkk",
+                password: "yayayaya"
+            },
+            {
+                userName: "lalala",
+                password: "yaya yaya"
+            },
+            {
+                userName: "kkkkkkkkkk",
+                password: "yayayaya"
+            },
+            {
+                userName: "kkkkkkkkkk",
+                password: "yaya yaya"
+            },
+        ]
+        let count = 0;
+        let check = users.filter((user, index) =>{
+            if((user.password).includes(" ")){
+                count++;
+                console.log(index);
+            }
+        })
+        if(count==0){
+            console.log("mọi tài khoản hợp lệ");
+        }
+    </script>
+</body>
+</html>

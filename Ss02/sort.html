@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            sort(): sắp xếp
+
+        */
+    //    let arr = [1,15,13,6,28,2];
+    //    let result = arr.sort();
+    //    console.log(result);
+       let film =[
+        {
+            name: "a",
+            date: "2024/09/25"
+        },
+        {
+            name: "b",
+            date: "2024/06/12"
+        },
+        {
+            name: "c",
+            date: "2024/07/22"
+        },
+        {
+            name: "d",
+            date: "2024/11/16"
+        },
+        {
+            name: "e",
+            date: "2024/09/13"
+        },
+       ]
+       let step1 = film.sort(function(a,b){
+           let a1 = a.date.split("/")[1];
+           let b1 = b.date.split("/")[1];
+           return a1 - b1;
+       })
+       let step2 = step1.sort(function(a,b){
+           let a1 = a.date.split("/")[2];
+           let b1 = b.date.split("/")[2];
+           return a1 - b1;
+       })
+       console.log(step2);
+    </script>
+</body>
+</html>
