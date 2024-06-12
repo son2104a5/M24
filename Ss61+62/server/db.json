@@ -1,0 +1,44 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "job_name": "Đi ăn",
+      "status": true
+    },
+    {
+      "id": 2,
+      "job_name": "Ngủ",
+      "status": true
+    },
+    {
+      "id": 3,
+      "job_name": "Nấu cơm",
+      "status": true
+    },
+    {
+      "id": 4,
+      "job_name": "Đi học",
+      "status": false
+    },
+    {
+      "id": 5,
+      "job_name": "Đi chơi",
+      "status": false
+    },
+    {
+      "id": 6,
+      "job_name": "Đi làm",
+      "status": false
+    },
+    {
+      "id": 7,
+      "job_name": "Chơi game",
+      "status": false
+    },
+    {
+      "job_name": "Tắm",
+      "status": false,
+      "id": 8
+    }
+  ]
+}
