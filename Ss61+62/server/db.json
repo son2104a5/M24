@@ -18,7 +18,7 @@
     {
       "id": 4,
       "job_name": "Đi học",
-      "status": false
+      "status": true
     },
     {
       "id": 5,
@@ -37,7 +37,7 @@
     },
     {
       "job_name": "Tắm",
-      "status": false,
+      "status": true,
       "id": 8
     }
   ]

@@ -125,15 +125,15 @@ export default function TodoList() {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex flex-col justify-center items-center shadow-md pt-[20px] pr-[30px] pl-[30px] pb-[30px] rounded">
-        <strong className="text-[32px]">Quản lí công việc</strong>
-        <div className="flex flex-col">
-          <input type="text" onChange={handleChange1} value={inputValue} placeholder="Nhập tên công việc" className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] w-[500px] p-2 rounded"/>
+        <strong className="text-[32px]">Quản lý công việc</strong>
+        <div className="flex flex-col shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-[20px] rounded">
+          <input type="text" onChange={handleChange1} value={inputValue} placeholder="Nhập tên công việc" className="shadow-[0_3px_10px_rgb(0,0,0,0.2)] w-[520px] p-2 rounded"/>
           {check?<p className="text-red-500"> * Tên công việc không được để trống</p>:<></>}
           {checkSame?<p className="text-red-500"> * Tên công việc không được phép trùng</p>:<></>}
           <button className="w-full bg-blue-600 mt-3 p-2 rounded text-white" onClick={addJob}>Thêm công việc</button>
         </div>
         <div className="mb-[20px] flex gap-7 mt-[20px] shadow-[0_3px_10px_rgb(0,0,0,0.2)] w-full justify-center p-4 rounded">
-          <NavLink to={'/'} className="p-2 rounded">Tất cả</NavLink><NavLink to={'/complete-list'} className="p-2 rounded">Hoàn thành</NavLink><NavLink to={'/incomplete-list'} className="p-2 rounded">Đang thực hiện</NavLink>
+          <NavLink to={'/'} className="p-2 rounded border-[1px] border-solid border-slate-400">Tất cả</NavLink><NavLink to={'/complete-list'} className="p-2 rounded border-[1px] border-solid border-slate-400">Hoàn thành</NavLink><NavLink to={'/incomplete-list'} className="p-2 rounded border-[1px] border-solid border-slate-400">Đang thực hiện</NavLink>
         </div>
         <Routes>
           <Route path="/" element={<FullList jobs={jobs} openFormDelete={openFormDelete} setStatus={setStatus} openFormEdit={openFormEdit}/>}></Route>
