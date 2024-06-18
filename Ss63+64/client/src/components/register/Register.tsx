@@ -96,7 +96,7 @@ export default function Register() {
         }
     };
   return (
-    <div className="bg-slate-100 p-[20px] text-center rounded">
+    <div className="bg-slate-100 p-[20px] text-center rounded-3xl bg-transparent text-white backdrop-blur-[30px]">
         <form className="">
         <strong className="text-3xl">Đăng ký tài khoản</strong>
             <div className="mt-[30px] mb-[20px] w-[400px] flex justify-between">

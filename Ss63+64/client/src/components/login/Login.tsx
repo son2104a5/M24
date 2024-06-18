@@ -47,19 +47,13 @@ export default function Login() {
                 if(checkPasswordResponse.data.length === 0){
                     setCheck('block')
                 }else {
-                    bcrypt.compare(password, hash).then((res) => {
-                        if(res){
-                            navigate('/')
-                        }else {
-                            setCheck('block')
-                        }
-                    });
+                    
                 }
             }
         }
     }
   return (
-    <div className="bg-slate-100 p-[20px] text-center rounded">
+    <div className="bg-slate-100 p-[20px] text-center rounded-3xl bg-transparent text-white backdrop-blur-[30px]">
         <form className="">
         <strong className="text-3xl">Đăng nhập</strong>
             <div className="mb-[20px] w-[400px] flex justify-between mt-6">
