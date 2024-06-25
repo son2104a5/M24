@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "haha",
+      "id": 1,
+      "requestId": "ZQhZKSMwtZ_XX2QOEyI1Q",
+      "signal": {}
+    },
+    {
+      "name": "mày",
+      "id": 2,
+      "requestId": "BasAVuXoAD5RGTBRQxS8v",
+      "signal": {}
+    },
+    {
+      "name": "tao",
+      "id": 3,
+      "requestId": "0ZzmjmB9g4JlLw4A8Uwq6",
+      "signal": {}
+    }
+  ]
+}
