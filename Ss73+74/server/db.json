@@ -1,0 +1,25 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "name": "Quét nhà",
+      "completed": true,
+      "requestId": "7dV1asPuAlgMxeU5VxcKu",
+      "signal": {},
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "Nấu cơm",
+      "completed": false,
+      "requestId": "KpYM25nRxr1mXsHqOR9KT",
+      "signal": {},
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Code",
+      "completed": true
+    }
+  ]
+}
