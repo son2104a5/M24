@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Throwback Hip Bag",
+      "price": 30,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "image": "https://www.reblz.in/public/uploads/items/IMG_8677.jpeg",
+      "stock": 30
+    },
+    {
+      "id": 2,
+      "name": "Lie Lie Bag",
+      "price": 30,
+      "image": "https://www.perfumerdreams.com/cdn/shop/products/550f0e579096b69a7665a0ee8f8bd484_1200x1200.jpg?v=1659303844",
+      "stock": 30,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+    },
+    {
+      "id": 3,
+      "name": "Beautiful handbag",
+      "price": 30,
+      "image": "https://cdn.vuahanghieu.com/unsafe/0x900/left/top/smart/filters:quality(90)/https://admin.vuahanghieu.com/upload/product/2023/06/tui-deo-vai-gucci-ophidia-gg-handbag-small-mau-be-nau-64891b7a29472-14062023084426.jpg",
+      "stock": 30,
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+    }
+  ],
+  "cart": [
+
+  ]
+}
